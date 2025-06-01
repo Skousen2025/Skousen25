@@ -4,9 +4,18 @@ import { useRouter } from 'next/router'
 export default function Home() {
   const { locale } = useRouter()
   const content = {
-    pt: { welcome: 'Bem-vindo ao App Skousen', desc: 'Upload de fotos, documentos e rota no Google Maps' },
-    en: { welcome: 'Welcome to Skousen App', desc: 'Upload photos, documents and Google Maps route' },
-    da: { welcome: 'Velkommen til Skousen App', desc: 'Upload billeder, dokumenter og rute i Google Maps' },
+    pt: {
+      welcome: 'Bem-vindo ao App Skousen',
+      desc: 'Upload de fotos, documentos e rota no Google Maps'
+    },
+    en: {
+      welcome: 'Welcome to Skousen App',
+      desc: 'Upload photos, documents and Google Maps route'
+    },
+    da: {
+      welcome: 'Velkommen til Skousen App',
+      desc: 'Upload billeder, dokumenter og rute i Google Maps'
+    }
   }
 
   const { welcome, desc } = content[locale] || content['pt']
@@ -21,3 +30,4 @@ export default function Home() {
     </>
   )
 }
+

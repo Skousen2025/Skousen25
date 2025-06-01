@@ -1,3 +1,3 @@
 # App Skousen
 
-Gerenciador de fotos, documentos e rotas via Google Maps para montadores.
+App para gestão de instalações, upload de fotos, documentos e rotas otimizadas.
